@@ -46,26 +46,6 @@ const HomePage = () => {
 
     return(
         <Grid container spacing={3} className={classes.root}>
-            <Grid item xs={3}>
-                <Paper className={classes.paper}>
-                    <Typography variant='h5'>
-                        Categorias
-                    </Typography>
-                    <List>
-                        {category.map(
-                            category => {
-                                return (
-                                    <Item
-                                        key = {category.id} 
-                                        name= {category.name}
-                                        details={count[category.name]}
-                                    />
-                                )
-                            }
-                        )}
-                    </List>
-                </Paper>
-            </Grid>
             <Grid container xs={9} spacing={3} className={classes.root}>
                 {products.map(item => {
                     return(
